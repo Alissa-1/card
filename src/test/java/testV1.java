@@ -49,7 +49,7 @@ public class testV1 {
         driver.findElement(By.className("button")).click();
 
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText().trim();
+        String actual = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText();
 
         Assertions.assertEquals(expected, actual);
     }
